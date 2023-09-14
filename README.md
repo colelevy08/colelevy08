@@ -39,7 +39,6 @@ Here are some ideas to get you started:
 <!-- Projects Section -->
 <h3 align="center">Projects</h3>
 
-<!-- Project Table -->
 <table class="tg">
   <thead>
     <tr>
@@ -52,53 +51,52 @@ Here are some ideas to get you started:
     </tr>
   </thead>
   <tbody>
-    <!-- Add your projects here -->
     <tr>
-      <td>Project 1</td>
-      <td>Description</td>
-      <td>React, Flask, SQLAlchemy</td>
+      <td>EchoEcho</td>
+      <td>A social media site for music enthusiasts and collectors</td>
+      <td>JavaScript, React, Flask, SQLAlchemy, HTML, TailwindCSS</td>
+      <td>Feature list</td>
+      <td><a href="https://github.com/colelevy08/EchoEcho">Repo</a></td>
+      <td>Demo link</td>
+    </tr>
+    <tr>
+      <td>Happy Trails</td>
+      <td>Discover the best hikes near you!</td>
+      <td>JavaScript, React, Python, Flask, SQLAlchemy, HTML, CSS</td>
+      <td>Feature list</td>
+      <td><a href="https://github.com/rachelsteiner91/HappyTrails">Repo</a></td>
+      <td>Demo link</td>
+    </tr>
+    <tr>
+      <td>Expense Tracker</td>
+      <td>A CLI python/flask application for managing finances</td>
+      <td>Python, Flask, SQLAlchemy</td>
       <td>Feature list</td>
       <td><a href="https://github.com/your-repo-link">Repo</a></td>
       <td>Demo link</td>
     </tr>
     <tr>
-      <td>Project 2</td>
-      <td>Description</td>
-      <td>React, Flask, SQLAlchemy</td>
+      <td>Closet Organizer</td>
+      <td>Add your clothes to a database to keep yourself organized and in fashion!</td>
+      <td>Javascript, React, HTML, CSS</td>
       <td>Feature list</td>
-      <td><a href="https://github.com/your-repo-link">Repo</a></td>
+      <td><a href="https://github.com/colelevy08/Closet-Organizer">Repo</a></td>
       <td>Demo link</td>
     </tr>
     <tr>
-      <td>Project 3</td>
-      <td>Description</td>
-      <td>React, Flask, SQLAlchemy</td>
+      <td>Corny Joke Generator</td>
+      <td>SWA to generate, create, and favorite "corny" jokes!</td>
+      <td>Javascript, HTML, CSS</td>
       <td>Feature list</td>
-      <td><a href="https://github.com/your-repo-link">Repo</a></td>
+      <td><a href="https://github.com/ThisBackpackersLife/phase-1-group-project">Repo</a></td>
       <td>Demo link</td>
     </tr>
     <tr>
-      <td>Project 4</td>
-      <td>Description</td>
-      <td>React, Flask, SQLAlchemy</td>
+      <td>My Portfolio</td>
+      <td>A detailed look at my portfolio and resume</td>
+      <td>JavaScript, React, Python, Flask, SQLAlchemy, HTML, TailwindCSS, faIcons</td>
       <td>Feature list</td>
-      <td><a href="https://github.com/your-repo-link">Repo</a></td>
-      <td>Demo link</td>
-    </tr>
-    <tr>
-      <td>Project 5</td>
-      <td>Description</td>
-      <td>React, Flask, SQLAlchemy</td>
-      <td>Feature list</td>
-      <td><a href="https://github.com/your-repo-link">Repo</a></td>
-      <td>Demo link</td>
-    </tr>
-    <tr>
-      <td>Project 6</td>
-      <td>Description</td>
-      <td>React, Flask, SQLAlchemy</td>
-      <td>Feature list</td>
-      <td><a href="https://github.com/your-repo-link">Repo</a></td>
+      <td><a href="https://github.com/colelevy08/my_portfolio">Repo</a></td>
       <td>Demo link</td>
     </tr>
   </tbody>
