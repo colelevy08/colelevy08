@@ -61,6 +61,46 @@ Here are some ideas to get you started:
       <td><a href="https://github.com/your-repo-link">Repo</a></td>
       <td>Demo link</td>
     </tr>
+    <tr>
+      <td>Project 2</td>
+      <td>Description</td>
+      <td>React, Flask, SQLAlchemy</td>
+      <td>Feature list</td>
+      <td><a href="https://github.com/your-repo-link">Repo</a></td>
+      <td>Demo link</td>
+    </tr>
+    <tr>
+      <td>Project 3</td>
+      <td>Description</td>
+      <td>React, Flask, SQLAlchemy</td>
+      <td>Feature list</td>
+      <td><a href="https://github.com/your-repo-link">Repo</a></td>
+      <td>Demo link</td>
+    </tr>
+    <tr>
+      <td>Project 4</td>
+      <td>Description</td>
+      <td>React, Flask, SQLAlchemy</td>
+      <td>Feature list</td>
+      <td><a href="https://github.com/your-repo-link">Repo</a></td>
+      <td>Demo link</td>
+    </tr>
+    <tr>
+      <td>Project 5</td>
+      <td>Description</td>
+      <td>React, Flask, SQLAlchemy</td>
+      <td>Feature list</td>
+      <td><a href="https://github.com/your-repo-link">Repo</a></td>
+      <td>Demo link</td>
+    </tr>
+    <tr>
+      <td>Project 6</td>
+      <td>Description</td>
+      <td>React, Flask, SQLAlchemy</td>
+      <td>Feature list</td>
+      <td><a href="https://github.com/your-repo-link">Repo</a></td>
+      <td>Demo link</td>
+    </tr>
   </tbody>
 </table>
 
