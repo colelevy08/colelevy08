@@ -26,15 +26,17 @@ Here are some ideas to get you started:
 
 
 <div align="center">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" href="https://www.linkedin.com/in/colelevy/"/>
-<img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=dev&logoColor=white" href="https://dev.to/colelevy"/>
-<!--   <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /> -->
+<!-- LinkedIn Badge with clickable link -->
+<a href="https://www.linkedin.com/in/colelevy/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+<!-- DEV Badge with clickable link (replacing the Medium badge) -->
+<a href="https://dev.to/colelevy" target="_blank">
+    <img src="https://img.shields.io/badge/DEV-000000?style=for-the-badge&logo=devdotto&logoColor=white" />
+</a>
 </div>
 <br>
-<div align="center">
-<!--   <h>Languages</h2> -->
-  <img src="https://skillicons.dev/icons?i=js,html,css,github,matlab,py,flask,react,vscode,tailwind" />
-</div>
 
 
 <!-- Projects Section -->
