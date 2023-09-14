@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 
 <!-- Header Section -->
 <div align="center">
-  <h2>Hello! I'm Sarah Dean<img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30"></h2> 
+  <h2>Hello! I'm Cole Levy<img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30"></h2> 
 <!-- <img src="https://github.com/sarahadean/sarahadean/assets/128323898/4ef67b26-a753-415c-b2e9-4a2218a0cd1c" height="270"/> -->
 </div>
 <br>
@@ -36,12 +36,6 @@ Here are some ideas to get you started:
   <img src="https://skillicons.dev/icons?i=js,html,css,github,matlab,py,flask,react,vscode,tailwind" />
 </div>
 
-
-<!-- Skills Section -->
-<div align="center">
-  <h3>Languages and Tools</h3>
-  <img src="https://skillicons.dev/icons?i=js,html,css,github,python,flask,react,sqlalchemy" />
-</div>
 
 <!-- Projects Section -->
 <h3 align="center">Projects</h3>
