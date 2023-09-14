@@ -19,16 +19,23 @@ Here are some ideas to get you started:
 
 <!-- Header Section -->
 <div align="center">
-  <h2>Hello! I'm Cole Levy 👋</h2>
+  <h2>Hello! I'm Sarah Dean<img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30"></h2> 
+<!-- <img src="https://github.com/sarahadean/sarahadean/assets/128323898/4ef67b26-a753-415c-b2e9-4a2218a0cd1c" height="270"/> -->
+</div>
+<br>
+
+
+<div align="center">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" href="https://www.linkedin.com/in/colelevy/"/>
+<img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=dev&logoColor=white" href="https://dev.to/colelevy"/>
+<!--   <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /> -->
+</div>
+<br>
+<div align="center">
+<!--   <h>Languages</h2> -->
+  <img src="https://skillicons.dev/icons?i=js,html,css,github,matlab,py,flask,react,vscode,tailwind" />
 </div>
 
-<!-- Social Media Badges -->
-<div align="center">
-  <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <!-- Add more badges here -->
-</div>
 
 <!-- Skills Section -->
 <div align="center">
