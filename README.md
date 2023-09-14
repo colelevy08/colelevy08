@@ -98,13 +98,12 @@ Here are some ideas to get you started:
   </tbody>
 </table>
 
-<!-- GitHub Stats -->
-<h3 align="center">📍 GitHub Stats</h3>
+<h3 align="center">📊 Github Stats </h3>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=nightowl" height="200px"/>
+<img src="https://streak-stats.demolab.com?user=colelevy08&theme=nightowl" height="200px"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=nightowl" height="200px"/>  
 </div>
-
-<!-- Profile Views -->
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=colelevy08&color=blueviolet" />
+<img src="https://komarev.com/ghpvc/?username=colelevy08&color=blueviolet" />
+<!-- ![](https://komarev.com/ghpvc/?username=sarahadean&color=blueviolet) -->
 </div>
