@@ -67,7 +67,6 @@ Here are some ideas to get you started:
 <!-- GitHub Stats -->
 <h3 align="center">📍 GitHub Stats</h3>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=colelevy08&show_icons=true&theme=nightowl" height="200px"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=nightowl" height="200px"/>
 </div>
 
