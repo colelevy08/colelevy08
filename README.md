@@ -49,7 +49,6 @@ Here are some ideas to get you started:
       <th>Description</th>
       <th>Tech Stack</th>
       <th>Repo</th>
-      <th>Demo</th>
     </tr>
   </thead>
   <tbody>
@@ -58,49 +57,42 @@ Here are some ideas to get you started:
       <td>A social media site for music enthusiasts and collectors</td>
       <td>JavaScript, React, Flask, SQLAlchemy, HTML, TailwindCSS</td>
       <td><a href="https://github.com/colelevy08/EchoEcho">Repo</a></td>
-      <td>Demo link</td>
     </tr>
     <tr>
       <td>Happy Trails</td>
       <td>Discover the best hikes near you!</td>
       <td>JavaScript, React, Python, Flask, SQLAlchemy, HTML, CSS</td>
       <td><a href="https://github.com/rachelsteiner91/HappyTrails">Repo</a></td>
-      <td>Demo link</td>
     </tr>
     <tr>
       <td>Expense Tracker</td>
       <td>A CLI python/flask application for managing finances</td>
       <td>Python, Flask, SQLAlchemy</td>
       <td><a href="https://github.com/your-repo-link">Repo</a></td>
-      <td>Demo link</td>
     </tr>
     <tr>
       <td>Closet Organizer</td>
       <td>Add your clothes to a database to keep yourself organized and in fashion!</td>
       <td>Javascript, React, HTML, CSS</td>
       <td><a href="https://github.com/colelevy08/Closet-Organizer">Repo</a></td>
-      <td>Demo link</td>
     </tr>
     <tr>
       <td>Corny Joke Generator</td>
       <td>SWA to generate, create, and favorite "corny" jokes!</td>
       <td>Javascript, HTML, CSS</td>
       <td><a href="https://github.com/ThisBackpackersLife/phase-1-group-project">Repo</a></td>
-      <td>Demo link</td>
     </tr>
     <tr>
       <td>My Portfolio V2</td>
       <td>A revised and improved portfolio to showcase my skills and history.</td>
       <td>Typescript, React, HTML, TailwindCSS</td>
       <td><a href="https://github.com/colelevy08/Portfolio25">Repo</a></td>
-      <td>Demo link</td>
     </tr>
     <tr>
       <td>My Portfolio V1</td>
       <td>A detailed look at my portfolio and resume</td>
       <td>JavaScript, React, Python, Flask, SQLAlchemy, HTML, TailwindCSS, faIcons</td>
       <td><a href="https://github.com/colelevy08/my_portfolio">Repo</a></td>
-      <td>Demo link</td>
     </tr>
   </tbody>
 </table>
