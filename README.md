@@ -48,7 +48,6 @@ Here are some ideas to get you started:
       <th>Project</th>
       <th>Description</th>
       <th>Tech Stack</th>
-      <th>Repo</th>
     </tr>
   </thead>
   <tbody>
