@@ -89,7 +89,14 @@ Here are some ideas to get you started:
       <td>Demo link</td>
     </tr>
     <tr>
-      <td>My Portfolio</td>
+      <td>My Portfolio V2</td>
+      <td>A revised and improved portfolio to showcase my skills and history.</td>
+      <td>Typescript, React, HTML, TailwindCSS</td>
+      <td><a href="https://github.com/colelevy08/Portfolio25">Repo</a></td>
+      <td>Demo link</td>
+    </tr>
+    <tr>
+      <td>My Portfolio V1</td>
       <td>A detailed look at my portfolio and resume</td>
       <td>JavaScript, React, Python, Flask, SQLAlchemy, HTML, TailwindCSS, faIcons</td>
       <td><a href="https://github.com/colelevy08/my_portfolio">Repo</a></td>
