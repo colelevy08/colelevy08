@@ -179,14 +179,6 @@
 
 ---
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=colelevy08&theme=darkhub&no-frame=true&no-bg=true&column=7" />
-</div>
-
----
-
 ## 📈 Contribution Graph
 
 <div align="center">
@@ -205,15 +197,10 @@
 
 ## 💬 About Me
 
-```python
-cole = {
-    "location":    "Saratoga Springs, NY",
-    "role":        "Full-Stack Developer",
-    "currently":   ["shipping GrooveStack Wave 11", "tuning prediction bot ML thresholds"],
-    "interests":   ["ML/trading systems", "hardware + software", "fintech", "hospitality tech"],
-    "fun_fact":    "I built a physical device that listens to your record player and IDs the vinyl"
-}
-```
+- 📍 Based in Saratoga Springs, NY
+- 🔭 Currently shipping GrooveStack Wave 11 + tuning prediction bot ML thresholds
+- 🎯 Interests: ML/trading systems, hardware + software, fintech, hospitality tech
+- ⚡ Fun fact: I built a physical device that listens to your record player and identifies the vinyl
 
 ---
 
