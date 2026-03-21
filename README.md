@@ -1,226 +1,201 @@
-<!-- HEADER BANNER -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0EA5E9&height=120&section=header&text=Cole%20Levy&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Saratoga%20Springs%2C%20NY&descAlignY=60&descSize=16" width="100%" />
-</div>
+# Bocage Champagne Bar
 
-<!-- TYPING ANIMATION -->
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=0EA5E9&center=true&vCenter=true&width=650&lines=Full-Stack+Developer+%F0%9F%92%BB;Web+%7C+Hardware+%7C+Trading+Systems+%F0%9F%93%88;From+restaurant+CMS+to+ESP32+firmware+%F0%9F%8E%B5;Always+shipping+something+new+%F0%9F%9A%80" alt="Typing SVG" />
-</div>
+**Saratoga Springs' First Champagne Bar** | [bocage.vercel.app](https://bocage.vercel.app)
 
-<br/>
-
-<!-- SOCIAL BADGES -->
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/colelevy)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](https://colelevy08.github.io/Portfolio25)
-[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/colelevy)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:colelevy08@gmail.com)
-
-</div>
+A full-stack web application for Bocage Champagne Bar — an intimate, 20-seat champagne bar at 10 Phila Street, Saratoga Springs, NY. Founded by Clark Gale & Zac Denham.
 
 ---
 
-<!-- QUICK STATS BAR -->
-<div align="center">
+## Stack
 
-| 🤖 46,000+ Markets Scanned | 🎵 170+ API Endpoints | 🍽️ 5 Languages Supported | ⚡ 4 Live Projects |
-|:---:|:---:|:---:|:---:|
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 18, React Router v6, Tailwind CSS |
+| Backend | Vercel Serverless Functions (Node.js) |
+| Database | Supabase (PostgreSQL + Row Level Security) |
+| Storage | Supabase Storage (CDN-backed image hosting) |
+| Hosting | Vercel (auto-deploy from GitHub) |
+| Icons | Lucide React |
+| Fonts | Great Vibes, Cormorant Garamond, Montserrat |
 
-</div>
+## Features
+
+### Public Site
+- **Homepage** — Hero slideshow, about section, menu preview, hours, press scroll, testimonials
+- **Menu** — 4 tabs (Food, Wines by the Glass, Flights/Cocktails/Beer, By the Bottle) with full real menu data
+- **Wine Profile Cards** — Click any wine to see label image, region, vintage, grapes, tasting notes, and reserve CTA. Profiles stored in Supabase with Vivino label images.
+- **Events** — Upcoming/past event listings with ticket links
+- **Gallery** — Photo grid with real venue photography
+- **Press** — 26 real press articles with Google favicon logos, horizontal scroll preview on homepage
+- **Blog (Uncorked)** — 12 champagne-themed blog posts with share bar, related posts, tag system
+- **Merch** — Product listings with Toast POS integration
+- **Gift Cards** — Toast gift card integration
+- **Private Events** — Venue info, capacity, features, inquiry form
+- **Press Kit** — Downloadable press materials
+- **Contact** — Contact form with Resend email integration
+
+### Admin CMS (19 Editable Sections)
+Full content management system accessible at `/admin` with password authentication.
+
+| Section | Capabilities |
+|---------|-------------|
+| Hero Content | Eyebrow, title, subtitle, tagline, CTA labels |
+| Hero Slides | Drag-and-drop image upload, alt text |
+| About | Heading, body, owners, title |
+| Team Profiles | Names, roles, photos (upload), bios, podcast links |
+| Hours | Daily open/close times, override messages |
+| Location | Address, phone, email, Google Maps URLs |
+| Contact Emails | General, private events, press emails |
+| Links & Social | Resy, Instagram, Facebook, Standard Fare |
+| Menu Items | Full CRUD across all 4 menu categories |
+| Events | Title, date, time, description, price, ticket URL |
+| Private Events | Heading, body, capacity, features list |
+| Gallery | Drag-and-drop photo upload, alt text, captions |
+| Testimonials | Name, rating, source, review text |
+| Google Rating | Rating score, review count |
+| Press Coverage | Publication, headline, URL (auto-generates favicon logo) |
+| Blog (Uncorked) | Full post editor with title, slug, body, tags, published/draft toggle |
+| Merchandise | Name, price, description, image upload, variants, availability |
+| Toast & Gift Cards | Order URL, gift card URL, restaurant ID |
+| Settings | Preview mode toggle, admin/preview passwords |
+
+### Data Persistence
+- **Supabase PostgreSQL** — `site_data` table stores full CMS config as JSONB, `wine_profiles` table stores structured wine data with label images
+- **Supabase Storage** — `images` bucket for admin-uploaded photos (hero, gallery, team, blog, merch) with CDN delivery
+- **localStorage fallback** — Graceful degradation if Supabase is unreachable
+- **Debounced sync** — Admin edits auto-save to Supabase (500ms debounce)
+
+### Wine Profile System
+- **Clickable wine items** on Wines by the Glass and By the Bottle tabs
+- **Rich profile modal** with label image, producer, region, vintage, grapes, tasting notes, pricing
+- **Supabase-backed** profiles with Vivino label images for key wines
+- **Auto-parse fallback** — Wines without Supabase profiles parse their description string into structured data
+- **"Reserve to Enjoy at Bocage"** CTA linking to Resy
+
+## Project Structure
+
+```
+bocage/
+├── api/                          # Vercel serverless functions
+│   ├── contact-form.js           # Resend email integration
+│   └── resy-availability.js      # Resy availability check
+├── public/                       # Static assets
+├── src/
+│   ├── components/
+│   │   ├── admin/
+│   │   │   └── ImageUpload.jsx   # Drag-and-drop Supabase Storage upload
+│   │   ├── layout/
+│   │   │   ├── Footer.jsx        # Site footer with admin login modal
+│   │   │   ├── Navbar.jsx        # Responsive navigation
+│   │   │   └── PageLayout.jsx    # Shared page wrapper
+│   │   ├── sections/             # Homepage sections
+│   │   │   ├── AboutSection.jsx
+│   │   │   ├── HeroSection.jsx
+│   │   │   ├── HoursSection.jsx
+│   │   │   └── ResyAvailability.jsx
+│   │   ├── ui/
+│   │   │   ├── ProfileCardModal.jsx
+│   │   │   └── WineProfileModal.jsx  # Wine detail modal
+│   │   ├── PreviewGate.jsx       # Password-protected preview mode
+│   │   └── ScrollToTop.jsx
+│   ├── context/
+│   │   └── AdminContext.js       # Global state + Supabase sync
+│   ├── data/
+│   │   ├── siteData.js           # Default site content (750+ lines)
+│   │   └── pressOutlets.js       # Press outlet registry
+│   ├── hooks/
+│   │   └── useWineProfiles.js    # Supabase wine profile fetch/cache
+│   ├── lib/
+│   │   └── supabase.js           # Supabase client
+│   ├── pages/
+│   │   ├── AdminPage.jsx         # Full CMS dashboard (700+ lines)
+│   │   ├── BlogPage.jsx          # Uncorked blog listing
+│   │   ├── BlogPostPage.jsx      # Individual blog post with share bar
+│   │   ├── ContactPage.jsx
+│   │   ├── EventsPage.jsx
+│   │   ├── GalleryPage.jsx
+│   │   ├── GiftCardsPage.jsx
+│   │   ├── HomePage.jsx          # Homepage with all sections
+│   │   ├── MenuPage.jsx          # Tabbed menu with wine profile modals
+│   │   ├── MerchPage.jsx
+│   │   ├── NotFoundPage.jsx
+│   │   ├── PressKitPage.jsx
+│   │   ├── PressPage.jsx
+│   │   └── PrivateEventsPage.jsx
+│   ├── App.js                    # Router configuration
+│   └── index.js                  # Entry point
+├── tailwind.config.js            # Custom Bocage theme
+└── package.json
+```
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `REACT_APP_SUPABASE_URL` | Supabase project URL |
+| `REACT_APP_SUPABASE_ANON_KEY` | Supabase anonymous public key |
+| `REACT_APP_PREVIEW_PASSWORD` | Preview gate password (fallback) |
+| `RESEND_API_KEY` | Resend email API key (serverless functions) |
+
+## Supabase Schema
+
+```sql
+-- CMS content storage
+site_data (id INT PK, data JSONB, updated_at TIMESTAMPTZ)
+
+-- Wine profile cards
+wine_profiles (id UUID PK, wine_name, producer, region, appellation,
+               grapes TEXT[], vintage, tasting_notes, label_image_url,
+               price_glass, price_bottle, menu_key, section_title,
+               reserve_url, created_at, updated_at)
+
+-- Storage buckets
+images (public) — hero/, gallery/, team/, blog/, merch/
+```
+
+## Development
+
+```bash
+npm install
+PORT=3001 npm start      # Dev server on localhost:3001
+npm run build            # Production build
+```
+
+## Deployment
+
+Auto-deploys to Vercel on `git push origin main`.
+
+```bash
+git add -A && git commit -m "Your message" && git push origin main
+```
+
+## Design System
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `champagne` | `#C4A35A` | Primary accent, CTAs, highlights |
+| `ivory` | `#FAF8F5` | Backgrounds |
+| `charcoal` | `#2A2A28` | Text, dark sections |
+| `silver` | `#9A9A98` | Secondary text |
+| `rose` | `#C4727F` | Alerts, errors |
+
+**Fonts:** Great Vibes (script/logo), Cormorant Garamond (display/headings), Montserrat (body)
+
+## Real Menu Data
+
+Complete Bocage Winter 2025 menu sourced from official PDFs:
+- 9 sparkling wines by the glass (including Bocage Everyday Cuvee — the wedding wine)
+- 5 champagnes by the glass (including Drappier Les Riceys exclusive to Bocage)
+- 12 still wines (white, rose/skin contact, red)
+- 8 signature cocktails, 2 beers, 2 flights
+- 17 grower champagnes by the bottle
+- 19 prominent houses (Dom Perignon, Krug, Cristal, Salon Le Mesnil at $2,000)
+- 11 rare & exquisite vintage selections (back to 1978)
+- 5 large format bottles
+- Full food menu (bar snacks, caviar, something more, something sweet)
 
 ---
 
-## 🔭 Currently Working On
+**Sure Thing Hospitality** | Clark Gale & Zac Denham | Saratoga Springs, NY
 
-<div align="center">
-
-| Project | Status | Focus Area |
-|:--------|:------:|:-----------|
-| 🤖 Prediction Market Bot | ![Active](https://img.shields.io/badge/ACTIVE-2ea44f?style=flat-square) | ML model tuning, scan efficiency |
-| 🎵 GrooveStack | ![Active](https://img.shields.io/badge/ACTIVE-2ea44f?style=flat-square) | Wave 11 features, Vinyl Buddy expansion |
-| 🍽️ Standard Fare | ![Live](https://img.shields.io/badge/LIVE-0EA5E9?style=flat-square) | Resend domain verification, pickup flow |
-| 🥂 Bocage | ![In Dev](https://img.shields.io/badge/IN_DEV-0A66C2?style=flat-square) | Content, images, Resy wiring |
-
-</div>
-
----
-
-## 🚀 What I'm Building
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 Prediction Market Bot
-
-> Trading system scanning **~46,000 Kalshi markets** every 60 seconds. ML ensemble (108 features) + real-time research + Kelly-optimal sizing. SSE dashboard, paper & live trading, full backtesting.
-
-**Key numbers:** `108 ML features` · `3 web searches/market` · `$100 daily stop loss` · `½ Kelly sizing`
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
-
-</td>
-<td width="50%" valign="top">
-
-### 🎵 [GrooveStack](https://github.com/colelevy08/groovestack)
-
-> Social marketplace for vinyl collectors. **170+ API endpoints**, Discogs pricing, Stripe payments with offer negotiation, SVG collection analytics, and **Vinyl Buddy** — a custom ESP32 device that audio-fingerprints records spinning on your turntable.
-
-**Key numbers:** `170+ endpoints` · `35+ DB tables` · `10 dev waves` · `1,100+ improvements`
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🍽️ [Standard Fare](https://github.com/colelevy08/standard-fare)
-
-> Full restaurant platform for Standard Fare (Saratoga Springs). Dual shopping carts, Toast POS, Resy reservations, auto Instagram feed, Google Reviews — all managed via a no-code admin panel. Multilingual: EN/ES/FR/ZH/JA.
-
-**Key numbers:** `24 pages` · `13 serverless functions` · `5 languages` · `7 custom hooks`
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Toast](https://img.shields.io/badge/Toast_POS-FF6B00?style=flat-square)
-
-</td>
-<td width="50%" valign="top">
-
-### 🥂 [Bocage](https://github.com/colelevy08/BocageChampagneSociety)
-
-> Website for Bocage Champagne Bar. Menu, gallery, events, press, merch, gift cards, and the Uncorked blog — with a Resy availability widget and a no-code admin panel for content management.
-
-**Key numbers:** `16 pages` · `Resy integrated` · `Admin CMS` · `Preview gated`
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-
-</td>
-</tr>
-</table>
-
----
-
-## 🛠️ Tech Stack
-
-<details>
-<summary><b>Click to expand full stack</b></summary>
-
-<br/>
-
-<div align="center">
-
-**Languages**
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-
-**Frontend**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-
-**Backend**
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-
-**Data & ML**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-
-**Infra & Hardware**
-
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
-
-</div>
-</details>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=colelevy08&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=0EA5E9&icon_color=0EA5E9&text_color=FFFFFF&rank_icon=github" height="165" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=colelevy08&theme=dark&hide_border=true&background=0D1117&ring=0EA5E9&fire=0EA5E9&currStreakLabel=0EA5E9" height="165" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=0EA5E9&text_color=FFFFFF&hide=html,css&langs_count=8" />
-</div>
-
----
-
-## 📈 Contribution Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=colelevy08&bg_color=0D1117&color=0EA5E9&line=0EA5E9&point=FFFFFF&area=true&area_color=0EA5E9&hide_border=true" width="100%" />
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/colelevy08/colelevy08/output/github-contribution-grid-snake-dark.svg" />
-</div>
-
----
-
-## 💬 About Me
-
-- 📍 Based in Saratoga Springs, NY
-- 🔭 Currently shipping GrooveStack Wave 11 + tuning prediction bot ML thresholds
-- 🎯 Interests: ML/trading systems, hardware + software, fintech, hospitality tech
-- ⚡ Fun fact: I built a physical device that listens to your record player and identifies the vinyl
-
----
-
-## 🤝 Open To
-
-<div align="center">
-
-![Freelance](https://img.shields.io/badge/Freelance_Projects-0EA5E9?style=for-the-badge)
-![Collaboration](https://img.shields.io/badge/Open_Source_Collab-2ea44f?style=for-the-badge)
-![Full_Time](https://img.shields.io/badge/Full_Time_Roles-0A66C2?style=for-the-badge)
-
-</div>
-
----
-
-<!-- FOOTER BANNER -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0EA5E9&height=80&section=footer" width="100%" />
-</div>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=colelevy08&color=0EA5E9&style=for-the-badge&label=PROFILE+VIEWS" />
-</div>
+Website created by [Cole Levy](https://www.linkedin.com/in/colelevy/)
