@@ -229,10 +229,10 @@ Website for Bocage Champagne Bar. Menu, gallery, events, press coverage, merch, 
 
 ---
 
-## 📈 Last 3 Months
+## 📈 Last 30 Days
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=colelevy08&bg_color=0D1117&color=0EA5E9&line=0EA5E9&point=FFFFFF&area=true&area_color=0EA5E9&hide_border=true&days=90" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=colelevy08&bg_color=0D1117&color=0EA5E9&line=0EA5E9&point=FFFFFF&area=true&area_color=0EA5E9&hide_border=true&days=30" width="100%" />
 </div>
 
 ---
