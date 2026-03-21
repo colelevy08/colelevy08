@@ -1,100 +1,59 @@
-<!--
-**colelevy08/colelevy08** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hey, I'm Cole Levy 👋
+**Full-Stack Developer** from Saratoga Springs, NY — building real products across web, AI, and hardware.
 
-Here are some ideas to get you started:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/colelevy)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](https://colelevy08.github.io/Portfolio25)
+[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/colelevy)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
 
-<!-- README.md -->
+## What I'm Building
 
-# Cole Levy's GitHub Profile
+### 🤖 [Prediction Market Bot](https://github.com/colelevy08/prediction-market-bot)
+AI-powered trading system that scans ~46,000 Kalshi markets every 60 seconds. Combines Random Forest + Gradient Boosting ML models (108 engineered features) with Claude AI web research and Kelly-optimal position sizing. Live dashboard with real-time SSE updates, paper and live trading modes, and full backtesting engine.
 
-<!-- Header Section -->
-<div align="center">
-  <h2>Hello! I'm Cole Levy<img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30"></h2> 
-<!-- <img src="https://github.com/sarahadean/sarahadean/assets/128323898/4ef67b26-a753-415c-b2e9-4a2218a0cd1c" height="270"/> -->
-</div>
-<br>
+`Python` `FastAPI` `scikit-learn` `Claude AI` `React` `Vite` `Supabase` `Kalshi API` `Railway`
 
+### 🍽️ [Standard Fare](https://github.com/colelevy08/standard-fare)
+Full restaurant platform for Standard Fare (Saratoga Springs). CMS-powered with dual shopping carts, Toast POS integration, Resy reservations, automated Instagram feeds, Google Reviews — all managed through a no-code admin panel. Multilingual (EN/ES/FR/ZH/JA), with a blog, private events, pickup ordering, and PDF menu generation.
 
-<div align="center">
-<!-- LinkedIn Badge with clickable link -->
-<a href="https://www.linkedin.com/in/colelevy/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+`React 19` `Tailwind CSS` `Supabase` `Vercel` `Serverless Functions` `Toast POS` `Resend`
 
-<!-- DEV Badge with clickable link (replacing the Medium badge) -->
-<a href="https://dev.to/colelevy" target="_blank">
-    <img src="https://img.shields.io/badge/DEV-000000?style=for-the-badge&logo=devdotto&logoColor=white" />
-</a>
-</div>
-<br>
+### 🥂 [Bocage](https://github.com/colelevy08/BocageChampagneSociety)
+Website for Bocage Champagne Bar. Built around discovery and atmosphere — menu, gallery, events, press, merch, and gift cards, plus an Uncorked blog and a Resy-powered availability widget. Includes a no-code admin panel for content management and a preview gate for pre-launch access.
 
+`React 19` `React Router 7` `Tailwind CSS` `Framer Motion` `Supabase` `Vercel`
 
-<!-- Projects Section -->
-<h3 align="center">Projects</h3>
+### 🎵 [GrooveStack](https://github.com/colelevy08/groovestack)
+Social marketplace for vinyl collectors — buy, sell, trade, and discover records. 170+ API endpoints, collection analytics with pure SVG charts, Discogs pricing, Stripe payments with offer negotiation, and a custom ESP32 hardware device (Vinyl Buddy) that audio-fingerprints records spinning on your turntable via the AudD API.
 
-<table class="tg">
-  <thead>
-    <tr>
-      <th>Project</th>
-      <th>Description</th>
-      <th>Tech Stack</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/colelevy08/EchoEcho">EchoEcho</td>
-      <td>A social media site for music enthusiasts and collectors</td>
-      <td>JavaScript, React, Flask, SQLAlchemy, HTML, TailwindCSS</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/rachelsteiner91/HappyTrails">Happy Trails</td>
-      <td>Discover the best hikes near you!</td>
-      <td>JavaScript, React, Python, Flask, SQLAlchemy, HTML, CSS</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/your-repo-link">Expense Tracker</td>
-      <td>A CLI python/flask application for managing finances</td>
-      <td>Python, Flask, SQLAlchemy</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/colelevy08/Closet-Organizer">Closet Organizer</td>
-      <td>Add your clothes to a database to keep yourself organized and in fashion!</td>
-      <td>Javascript, React, HTML, CSS</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/ThisBackpackersLife/phase-1-group-project">Corny Joke Generator</td>
-      <td>SWA to generate, create, and favorite "corny" jokes!</td>
-      <td>Javascript, HTML, CSS</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/colelevy08/Portfolio25">My Portfolio V2</td>
-      <td>A revised and improved portfolio to showcase my skills and history.</td>
-      <td>Typescript, React, HTML, TailwindCSS</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/colelevy08/my_portfolio">My Portfolio V1</td>
-      <td>A detailed look at my portfolio and resume</td>
-      <td>JavaScript, React, Python, Flask, SQLAlchemy, HTML, TailwindCSS, faIcons</td>
-    </tr>
-  </tbody>
-</table>
+`React 19` `Node.js` `Express` `PostgreSQL` `Stripe` `Claude AI` `C/C++ (ESP32)`
 
-<h3 align="center">📊 Github Stats </h3>
-<div align="center">
-<img src="https://streak-stats.demolab.com?user=colelevy08&theme=nightowl" height="200px"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=nightowl" height="200px"/>  
-</div>
-<div align="center">
-<img src="https://komarev.com/ghpvc/?username=colelevy08&color=blueviolet" />
-<!-- ![](https://komarev.com/ghpvc/?username=sarahadean&color=blueviolet) -->
-</div>
+### 💼 [Portfolio](https://github.com/colelevy08/Portfolio25)
+Personal portfolio site showcasing my work and background.
+
+`TypeScript` `React` `Styled Components`
+
+---
+
+## Tech Stack
+
+**Languages:** JavaScript, TypeScript, Python, SQL, C/C++  
+**Frontend:** React, Tailwind CSS, Framer Motion, Styled Components  
+**Backend:** Node.js, Express, FastAPI, Flask  
+**Data & AI:** PostgreSQL, Supabase, scikit-learn, Claude AI  
+**Hardware:** ESP32 (C/C++), MEMS microphones, OLED displays  
+**Infra:** Vercel, Railway, GitHub Actions
+
+---
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=colelevy08&show_icons=true&theme=dark&hide_border=true&bg_color=0A0A0A&title_color=D4A843&icon_color=D4A843&text_color=FFFFFF" alt="GitHub Stats" />
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=dark&hide_border=true&bg_color=0A0A0A&title_color=D4A843&text_color=FFFFFF&hide=html,css" alt="Top Languages" />
+</p>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=colelevy08&color=blueviolet" />
+</p>
+
