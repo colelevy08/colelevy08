@@ -1,11 +1,11 @@
 <!-- HEADER BANNER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=D4A843&height=120&section=header&text=Cole%20Levy&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Saratoga%20Springs%2C%20NY&descAlignY=60&descSize=16" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0EA5E9&height=120&section=header&text=Cole%20Levy&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Saratoga%20Springs%2C%20NY&descAlignY=60&descSize=16" width="100%" />
 </div>
 
 <!-- TYPING ANIMATION -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=D4A843&center=true&vCenter=true&width=650&lines=Building+real+products+with+AI+%F0%9F%A4%96;Web+%7C+Hardware+%7C+Trading+Systems+%F0%9F%93%88;From+restaurant+CMS+to+ESP32+firmware+%F0%9F%8E%B5;Always+shipping+something+new+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=0EA5E9&center=true&vCenter=true&width=650&lines=Full-Stack+Developer+%F0%9F%92%BB;Web+%7C+Hardware+%7C+Trading+Systems+%F0%9F%93%88;From+restaurant+CMS+to+ESP32+firmware+%F0%9F%8E%B5;Always+shipping+something+new+%F0%9F%9A%80" alt="Typing SVG" />
 </div>
 
 <br/>
@@ -40,7 +40,7 @@
 |:--------|:------:|:-----------|
 | 🤖 Prediction Market Bot | ![Active](https://img.shields.io/badge/ACTIVE-2ea44f?style=flat-square) | ML model tuning, scan efficiency |
 | 🎵 GrooveStack | ![Active](https://img.shields.io/badge/ACTIVE-2ea44f?style=flat-square) | Wave 11 features, Vinyl Buddy expansion |
-| 🍽️ Standard Fare | ![Live](https://img.shields.io/badge/LIVE-D4A843?style=flat-square) | Resend domain verification, pickup flow |
+| 🍽️ Standard Fare | ![Live](https://img.shields.io/badge/LIVE-0EA5E9?style=flat-square) | Resend domain verification, pickup flow |
 | 🥂 Bocage | ![In Dev](https://img.shields.io/badge/IN_DEV-0A66C2?style=flat-square) | Content, images, Resy wiring |
 
 </div>
@@ -55,7 +55,7 @@
 
 ### 🤖 Prediction Market Bot
 
-> AI-powered trading system scanning **~46,000 Kalshi markets** every 60 seconds. ML ensemble (108 features) + Claude AI research + Kelly-optimal sizing. Real-time SSE dashboard, paper & live trading, full backtesting.
+> Trading system scanning **~46,000 Kalshi markets** every 60 seconds. ML ensemble (108 features) + real-time research + Kelly-optimal sizing. SSE dashboard, paper & live trading, full backtesting.
 
 **Key numbers:** `108 ML features` · `3 web searches/market` · `$100 daily stop loss` · `½ Kelly sizing`
 
@@ -63,7 +63,6 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Claude AI](https://img.shields.io/badge/Claude_AI-D4A843?style=flat-square)
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
 
 </td>
@@ -79,7 +78,6 @@
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
-![Claude AI](https://img.shields.io/badge/Claude_AI-D4A843?style=flat-square)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
 </td>
@@ -150,11 +148,10 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 
-**Data & AI**
+**Data & ML**
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Claude AI](https://img.shields.io/badge/Claude_AI-D4A843?style=for-the-badge)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 
 **Infra & Hardware**
@@ -172,12 +169,12 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=colelevy08&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=D4A843&icon_color=D4A843&text_color=FFFFFF&rank_icon=github" height="165" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=colelevy08&theme=dark&hide_border=true&background=0D1117&ring=D4A843&fire=D4A843&currStreakLabel=D4A843" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=colelevy08&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=0EA5E9&icon_color=0EA5E9&text_color=FFFFFF&rank_icon=github" height="165" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=colelevy08&theme=dark&hide_border=true&background=0D1117&ring=0EA5E9&fire=0EA5E9&currStreakLabel=0EA5E9" height="165" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=D4A843&text_color=FFFFFF&hide=html,css&langs_count=8" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=0EA5E9&text_color=FFFFFF&hide=html,css&langs_count=8" />
 </div>
 
 ---
@@ -193,7 +190,7 @@
 ## 📈 Contribution Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=colelevy08&bg_color=0D1117&color=D4A843&line=D4A843&point=FFFFFF&area=true&area_color=D4A843&hide_border=true" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=colelevy08&bg_color=0D1117&color=0EA5E9&line=0EA5E9&point=FFFFFF&area=true&area_color=0EA5E9&hide_border=true" width="100%" />
 </div>
 
 ---
@@ -213,7 +210,7 @@ cole = {
     "location":    "Saratoga Springs, NY",
     "role":        "Full-Stack Developer",
     "currently":   ["shipping GrooveStack Wave 11", "tuning prediction bot ML thresholds"],
-    "interests":   ["AI/ML", "hardware + software", "fintech", "hospitality tech"],
+    "interests":   ["ML/trading systems", "hardware + software", "fintech", "hospitality tech"],
     "fun_fact":    "I built a physical device that listens to your record player and IDs the vinyl"
 }
 ```
@@ -224,7 +221,7 @@ cole = {
 
 <div align="center">
 
-![Freelance](https://img.shields.io/badge/Freelance_Projects-D4A843?style=for-the-badge)
+![Freelance](https://img.shields.io/badge/Freelance_Projects-0EA5E9?style=for-the-badge)
 ![Collaboration](https://img.shields.io/badge/Open_Source_Collab-2ea44f?style=for-the-badge)
 ![Full_Time](https://img.shields.io/badge/Full_Time_Roles-0A66C2?style=for-the-badge)
 
@@ -234,9 +231,9 @@ cole = {
 
 <!-- FOOTER BANNER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=D4A843&height=80&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0EA5E9&height=80&section=footer" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=colelevy08&color=D4A843&style=for-the-badge&label=PROFILE+VIEWS" />
+  <img src="https://komarev.com/ghpvc/?username=colelevy08&color=0EA5E9&style=for-the-badge&label=PROFILE+VIEWS" />
 </div>
