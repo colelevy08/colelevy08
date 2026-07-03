@@ -36,7 +36,7 @@
 
 ### 🥇 Portmint Pulse — open source, running in one line
 
-**The live-limit instrument for Claude Code.** Reads your *real* OAuth rate-limit windows — live, local, before you hit the wall — and puts them everywhere you work: a browser dashboard, a terminal status line, a desktop warning at 80/95/100%, and a usage archive that survives Claude Code's own ~30-day transcript cleanup.
+**The live-limit instrument for Claude Code** — real rate-limit windows in a dashboard, a status line, and a desktop warning before you hit the wall.
 
 [![CI](https://github.com/colelevy08/portmint-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/colelevy08/portmint-pulse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-34e0b3.svg)](https://github.com/colelevy08/portmint-pulse/blob/main/LICENSE)
@@ -44,30 +44,32 @@
 [![Platforms](https://img.shields.io/badge/platforms-macOS%20%C2%B7%20Windows%20%C2%B7%20Linux-0ea5e9.svg)](https://github.com/colelevy08/portmint-pulse#install)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-5cf0c4.svg)](https://github.com/colelevy08/portmint-pulse/blob/main/CONTRIBUTING.md)
 
-**Get it running right now:**
-
 ```bash
 pipx install git+https://github.com/colelevy08/portmint-pulse.git && portmint-pulse
 ```
 
-No `pipx`? `git clone` + `python3 app.py` works with **zero dependencies** on macOS/Linux. Don't want to install anything — **[try the live demo →](https://colelevy08.github.io/portmint-pulse/)** (runs in your browser, fabricated data, no signup).
+No `pipx`? `git clone` + `python3 app.py` — zero dependencies. Or skip install: **[live demo →](https://colelevy08.github.io/portmint-pulse/)**
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/colelevy08/portmint-pulse/main/assets/screenshot.png" width="760" alt="Portmint Pulse dashboard — live rate-limit bars, token and cost trends by model and project" />
 </div>
 
-- Pure Python **standard library** — no Node, no build step, no cloud dependency
-- Reads **live OAuth rate-limit windows** (not inferred from logs) — a desktop toast fires before you get throttled mid-task
-- **Zero telemetry**, localhost-only, read-only against `~/.claude` — one outbound call, the same one Claude Code itself makes
-- Runs on macOS, Windows, and Linux/WSL
+- **Zero dependencies** — pure Python stdlib, no Node, no build step
+- **Live limits** — reads real OAuth windows, warns before you hit the wall
+- **Zero telemetry** — localhost-only, read-only
 
-**→ [github.com/colelevy08/portmint-pulse](https://github.com/colelevy08/portmint-pulse)** — a ⭐ helps other Claude Code users find it.
+**→ [github.com/colelevy08/portmint-pulse](https://github.com/colelevy08/portmint-pulse)** — ⭐ if it's useful.
 
 ---
 
 ### 🥈 FableKalshi — quant trading, real money
 
-A multi-strategy async Python platform trading Kalshi 15-minute and hourly crypto-binary markets. Four strategies plus an ensemble run in parallel; every candidate shadow-trades until it clears a promotion threshold. Regime detection (volatility / trend / chop) drives dynamic position sizing, and every order is gated through fee- and slippage-aware EV math with fractional-Kelly sizing. Automatic kill switches halt entries on drawdown, loss streaks, stale data, or reject spikes.
+Async Python platform trading Kalshi 15-minute and hourly crypto-binary markets.
+
+- Four strategies + an ensemble, shadow-traded until they clear a promotion bar
+- Regime detection (vol / trend / chop) sizes positions dynamically
+- Every order gated by fee-aware EV math and fractional-Kelly sizing
+- Kill switches halt entries on drawdown, loss streaks, stale data, or reject spikes
 
 `Python` `asyncio` `WebSockets` `SQLite`
 
@@ -82,13 +84,13 @@ Fee-aware EV and fractional-Kelly sizing math for Kalshi binary contracts. Zero 
 
 | Post | Project | What it is | Stack | Link |
 |:---:|:---|:---|:---|:---|
-| 3 | **Bocage Champagne Society** | Members app + admin CRM for a private champagne society — one codebase to iOS, Android, and web | React · Vite · Capacitor · Supabase | [live](https://bocage-champagne-society.vercel.app) |
-| 4 | **Standard Fare** | Restaurant site for the Saratoga Springs spot I helped launch — reservations, ticketed events, menu CMS | React · Vercel · Supabase | [live](https://standardfaresaratoga.com) |
-| 5 | **Bocage** | Saratoga's first champagne bar — reservations, wine list, event calendar | React · Vercel · Supabase | [live](https://bocagechampagnebar.com) |
-| 6 | **Legacy Path Planners** | Lead-gen site + back-office CRM for a Florida long-term-care insurance practice | React · Vercel · Supabase | [live](https://www.legacypathplanners.com/) |
-| 7 | **Saratoga Handicapper** | NYRA handicapping PWA — Kelly-fraction stake sizing, live odds, Claude-powered pace/trip analysis | React · Vite · FastAPI | [live](https://saratoga-handicapper.vercel.app) |
-| 8 | **PolyBot** | Polymarket copy-trading bot — whale identification, edge-verified Kelly sizing over WebSocket | Python · asyncio | [repo](https://github.com/colelevy08/PolyBot) |
-| 9 | **GrooveStack** | Social marketplace for vinyl collectors — catalog, peer-to-peer trades, condition verification, discovery feed | React · Node · Vercel | [repo](https://github.com/colelevy08/groovestack) · [live](https://groovestack.vercel.app) |
+| 3 | **Bocage Champagne Society** | Members app + CRM for a champagne society — one codebase, iOS/Android/web | React · Vite · Capacitor · Supabase | [live](https://bocage-champagne-society.vercel.app) |
+| 4 | **Standard Fare** | Restaurant site I helped launch — reservations, ticketed events, menu CMS | React · Vercel · Supabase | [live](https://standardfaresaratoga.com) |
+| 5 | **Bocage** | Saratoga's first champagne bar — reservations, wine list, events | React · Vercel · Supabase | [live](https://bocagechampagnebar.com) |
+| 6 | **Legacy Path Planners** | Lead-gen site + CRM for a Florida LTC-insurance practice | React · Vercel · Supabase | [live](https://www.legacypathplanners.com/) |
+| 7 | **Saratoga Handicapper** | NYRA handicapping PWA — Kelly sizing, live odds, Claude-powered analysis | React · Vite · FastAPI | [live](https://saratoga-handicapper.vercel.app) |
+| 8 | **PolyBot** | Polymarket copy-trading bot — whale ID, edge-verified Kelly sizing | Python · asyncio | [repo](https://github.com/colelevy08/PolyBot) |
+| 9 | **GrooveStack** | Social marketplace for vinyl collectors — catalog, trades, discovery feed | React · Node · Vercel | [repo](https://github.com/colelevy08/groovestack) · [live](https://groovestack.vercel.app) |
 
 ---
 
@@ -114,9 +116,9 @@ Fee-aware EV and fractional-Kelly sizing math for Kalshi binary contracts. Zero 
 
 ## 💬 About
 
-Full-stack & AI engineer in Saratoga Springs, NY. I build the web layer for small businesses that need to look serious on day one — restaurants, insurance practices, members clubs — three of which are on retainer right now. Off the client clock: quant trading against prediction markets, a horse-racing analytics PWA for the Saratoga meet, and developer tooling like the one above.
+Full-stack & AI engineer in Saratoga Springs, NY — the web layer for small businesses that need to look serious on day one (restaurants, insurance, members clubs; three on retainer now). Off the clock: prediction-market trading, a horse-racing analytics PWA, and tooling like the one above.
 
-Before this I studied Communication at SUNY Geneseo (with semesters at La Sorbonne and Sciences Po), then Flatiron School's software engineering program in 2023. Claude Code sits in my terminal all day — I write the spec and read every diff; it's how one developer keeps fifteen-plus projects and three client retainers moving at once.
+Studied Communication at SUNY Geneseo (semesters at La Sorbonne and Sciences Po), then Flatiron School in 2023. Claude Code sits in my terminal all day — I write the spec, read every diff; it's how one developer keeps fifteen-plus projects moving at once.
 
 **→ [The full portfolio, all 12 entries](https://colelevy.dev)**
 
