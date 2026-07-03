@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2800&pause=1200&color=F0A63D&center=true&vCenter=true&width=760&lines=Shipping+products+and+trading+systems+that+run+real+businesses;Portmint+Pulse%3A+open+source%2C+front+and+center;Post+time%3A+anytime" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2800&pause=1200&color=0EA5E9&center=true&vCenter=true&width=760&lines=Shipping+products+and+trading+systems+that+run+real+businesses;Portmint+Pulse%3A+open+source%2C+front+and+center;Post+time%3A+anytime" alt="Typing SVG" />
 </div>
 
 <br/>
@@ -125,16 +125,11 @@ Before this I studied Communication at SUNY Geneseo (with semesters at La Sorbon
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=colelevy08&show_icons=true&theme=dark&hide_border=true&bg_color=0b1d15&title_color=f0a63d&icon_color=f0a63d&text_color=ece5d3&rank_icon=github" height="165" alt="Cole's GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=colelevy08&theme=dark&hide_border=true&background=0b1d15&ring=f0a63d&fire=f0a63d&currStreakLabel=f0a63d" height="165" alt="Cole's GitHub streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=colelevy08&theme=dark&hide_border=true&background=0b1d15&ring=0ea5e9&fire=0ea5e9&currStreakLabel=0ea5e9" height="165" alt="Cole's GitHub streak" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=colelevy08&layout=compact&theme=dark&hide_border=true&bg_color=0b1d15&title_color=f0a63d&text_color=ece5d3&hide=html,css&langs_count=8" alt="Cole's most-used languages" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=colelevy08&bg_color=0b1d15&color=f0a63d&line=f0a63d&point=ece5d3&area=true&area_color=f0a63d&hide_border=true&days=30" width="100%" alt="Cole's last 30 days of GitHub activity" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=colelevy08&bg_color=0b1d15&color=0ea5e9&line=0ea5e9&point=ece5d3&area=true&area_color=0ea5e9&hide_border=true&days=30" width="100%" alt="Cole's last 30 days of GitHub activity" />
 </div>
 
 ---
