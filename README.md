@@ -53,6 +53,15 @@ React, TypeScript, Vite, and Tailwind on [the portfolio](https://github.com/cole
 
 Communication at SUNY Geneseo, with semesters at La Sorbonne and Sciences Po, then Flatiron School in 2023. I write the spec and read every diff. Claude Code stays in the loop.
 
+## Activity
+
+Public GitHub contributions, redrawn daily in the portfolio colors.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/colelevy08/colelevy08/output/github-contribution-grid-snake-dark.svg">
+  <img alt="Animated snake moving through Cole Levy's public GitHub contribution graph" src="https://raw.githubusercontent.com/colelevy08/colelevy08/output/github-contribution-grid-snake.svg">
+</picture>
+
 Health · History · Horses.
 
 [colelevy.dev](https://colelevy.dev)

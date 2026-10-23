@@ -8,13 +8,9 @@ name: contribution-graph
 
 on:
   schedule:
+    # GitHub runs scheduled workflows from the default branch only.
     - cron: "20 7 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - cursor/profile-readme-redesign-be07
-    paths:
-      - .github/workflows/contribution-graph.yml
 
 permissions:
   contents: write
