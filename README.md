@@ -21,6 +21,8 @@ Local dashboard for Claude Code. It reads live rate-limit windows and charts tok
 
 <a href="https://colelevy.dev"><img src="./assets/portmint-pulse.png" alt="Portmint Pulse dashboard with rate-limit bars and token and cost trends by model and project" width="720"></a>
 
+[See it on the portfolio](https://colelevy.dev).
+
 ## FableKalshi
 
 Private trading system for Kalshi's 15-minute and hourly crypto binaries. The public part is the math an order has to clear:
