@@ -1,0 +1,61 @@
+# Draws the public contribution graph as an animated snake and publishes
+# the SVGs to the `output` branch. That branch is not the default branch
+# and is not `gh-pages`, so these commits do not count as contributions.
+# The drawing reads https://github.com/users/colelevy08/contributions
+# and never invents activity.
+
+name: contribution-graph
+
+on:
+  schedule:
+    # GitHub runs scheduled workflows from the default branch only.
+    - cron: "20 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-graph
+  cancel-in-progress: false
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: draw the public graph
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: colelevy08
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=#c03428&color_dots=#efe7d2,#b7d4c0,#1d6b48,#175539,#0b1d15
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#c03428&color_dots=#23402e,#1d6b48,#2f8f5b,#d7e7c8,#f0a63d
+
+      - name: publish to the output branch
+        env:
+          TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          test -s dist/github-contribution-grid-snake.svg
+          test -s dist/github-contribution-grid-snake-dark.svg
+          work="$RUNNER_TEMP/output-repo"
+          auth="https://x-access-token:${TOKEN}@github.com/${REPO}.git"
+          if git ls-remote --exit-code --heads "$auth" output >/dev/null 2>&1; then
+            git clone --depth 1 --branch output "$auth" "$work"
+          else
+            mkdir -p "$work"
+            git -C "$work" init -b output
+            git -C "$work" remote add origin "$auth"
+          fi
+          cp dist/github-contribution-grid-snake.svg dist/github-contribution-grid-snake-dark.svg "$work/"
+          git -C "$work" config user.name "github-actions[bot]"
+          git -C "$work" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$work" add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+          if git -C "$work" diff --cached --quiet; then
+            echo "Snake already matches the public graph."
+            exit 0
+          fi
+          git -C "$work" commit -m "Update contribution snake from the public graph"
+          git -C "$work" push -u origin output
